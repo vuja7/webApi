@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vuja.KomunikacijaSaBazom", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vuja.API", "Vuja.API\Vuja.API.csproj", "{CE0F94E5-DE25-4836-A371-115BD04BD230}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vuja.MVC", "Vuja.MVC\Vuja.MVC.csproj", "{F9729765-B28D-4307-A358-1A3020E61DD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vuja.MVC", "Vuja.MVC\Vuja.MVC.csproj", "{F9729765-B28D-4307-A358-1A3020E61DD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCommands", "EFCommands\EFCommands.csproj", "{E2479DB3-02CB-419A-B584-BDF7ED71FCB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vuja.Aplikacija", "Vuja.Aplikacija\Vuja.Aplikacija.csproj", "{6D443367-110B-4E37-8845-D38983C6E5FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vuja.EfKomande", "Vuja.EfKomande\Vuja.EfKomande.csproj", "{4A1BECC2-C6C2-4A6E-87A9-618F3F0B7A27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +31,14 @@ Global
 		{F9729765-B28D-4307-A358-1A3020E61DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9729765-B28D-4307-A358-1A3020E61DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9729765-B28D-4307-A358-1A3020E61DD4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2479DB3-02CB-419A-B584-BDF7ED71FCB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2479DB3-02CB-419A-B584-BDF7ED71FCB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2479DB3-02CB-419A-B584-BDF7ED71FCB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2479DB3-02CB-419A-B584-BDF7ED71FCB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D443367-110B-4E37-8845-D38983C6E5FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D443367-110B-4E37-8845-D38983C6E5FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D443367-110B-4E37-8845-D38983C6E5FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D443367-110B-4E37-8845-D38983C6E5FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A1BECC2-C6C2-4A6E-87A9-618F3F0B7A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1BECC2-C6C2-4A6E-87A9-618F3F0B7A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1BECC2-C6C2-4A6E-87A9-618F3F0B7A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1BECC2-C6C2-4A6E-87A9-618F3F0B7A27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
