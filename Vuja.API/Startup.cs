@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Vuja.Aplikacija.Commands;
+using Vuja.KomunikacijaSaBazom.Domains;
+using Vuja.EfKomande;
 
 namespace Vuja.API
 {
@@ -26,6 +29,8 @@ namespace Vuja.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddDbContext<VujaNBApatikeContext>();
+            services.AddTransient<ICreateModelCommand, EfCreatModelCommand>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
