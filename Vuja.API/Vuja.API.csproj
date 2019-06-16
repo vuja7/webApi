@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Vuja.Aplikacija\Vuja.Aplikacija.csproj" />
-    <ProjectReference Include="..\Vuja.EfKomande\Vuja.EfKomande.csproj" />
     <ProjectReference Include="..\Vuja.KomunikacijaSaBazom\Vuja.KomunikacijaSaBazom.csproj" />
   </ItemGroup>
 
