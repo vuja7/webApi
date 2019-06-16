@@ -38,8 +38,15 @@ namespace Vuja.API.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] CreateModelDto dto)
         {
-            _creatModel.Execute(dto);
-            return Ok();
+            try
+            {
+                _creatModel.Execute(dto);
+                return Ok();
+            }
+            catch(Exception)
+            {
+                return (StatusCode(500));
+            }
         }
 
         // PUT: api/Model/5

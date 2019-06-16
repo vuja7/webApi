@@ -1,8 +1,8 @@
-﻿using Vuja.Aplikacija.Commands;
-using Vuja.Aplikacija.DataTransfer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Vuja.Aplikacija.Commands;
+using Vuja.Aplikacija.DataTransfer;
 using Vuja.KomunikacijaSaBazom.Domains;
 
 namespace Vuja.EfKomande
@@ -26,8 +26,8 @@ namespace Vuja.EfKomande
                 ModelCena = request.ModelCena,
                 ModelDatumIzlaska = request.ModelDatumIzlaska
 
-                
-            }) ;
+
+            });
 
             _context.SaveChanges();
         }

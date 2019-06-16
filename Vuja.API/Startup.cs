@@ -11,8 +11,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Vuja.Aplikacija.Commands;
+using Vuja.EfKomande;
 using Vuja.KomunikacijaSaBazom.Domains;
-using Vuja.
+
+
+namespace Vuja.API
 {
     public class Startup
     {
