@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Vuja.Aplikacija.Commands;
 using Vuja.Aplikacija.DataTransfer;
+using Vuja.Aplikacija.Exceptions;
 
 namespace Vuja.API.Controllers
 {
@@ -41,9 +42,13 @@ namespace Vuja.API.Controllers
             try
             {
                 _creatModel.Execute(dto);
-                return Ok();
+                return StatusCode(201);
             }
-            catch(Exception)
+            catch (EntityNotFoundException e)
+            {
+                return UnprocessableEntity(e.Message);
+            }
+            catch (Exception)
             {
                 return (StatusCode(500));
             }
